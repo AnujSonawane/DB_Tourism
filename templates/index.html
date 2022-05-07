@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+<!-- Crosal of the site  -->
+<div
+  id="carouselExampleInterval"
+  class="carousel slide carousel-fade"
+  data-bs-ride="carousel"
+>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="2000">
+      <img
+        src="{% static 'img/2.jpg' %}"
+        height="900"
+        class="d-block w-100 img-fluid"
+        alt="..."
+      />
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img
+        src="{% static 'img/1.jpg' %}"
+        height="900"
+        class="d-block w-100 img-fluid"
+        alt="..."
+      />
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img
+        src="{% static 'img/3.jpg' %}"
+        height="900"
+        class="d-block w-100 img-fluid"
+        alt="..."
+      />
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img
+        src="{% static 'img/4.jpg' %}"
+        height="900"
+        class="d-block w-100 img-fluid"
+        alt="..."
+      />
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#carouselExampleInterval"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselExampleInterval"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- End of the crousal -->
+
+<!-- text below the crousal -->
+<div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+  <div class="col-md-6 px-0">
+    <h1 class="display-5 fst-italic">Welcome to Saswad</h1>
+    <p class="lead my-3">
+      It is an historic place in Pune district. saswad has the Sant Sopankaka
+      mandir. Sant Sopankaka is the younger brother of Sant Dnyaneshwar,who take
+      his samadhi in saswad. So you all have to visit saswad once in a lifetime.
+      I post here information about saswad once in a week. So waiting for me
+    </p>
+  </div>
+</div>
+<!-- end of the text below crousal -->
+
+<!-- card like  -->
+<div class="container">
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div
+        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+      >
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Fort</strong>
+          <h3 class="mb-0">Purandhar</h3>
+          <p class="card-text mb-auto">
+            It is famous for the main temple of Lord Khandoba. It is a famous
+            temple town being the family deity of many houses in Maharashtra and
+            Karnataka. Its economy is centered on businesses catering to the
+            numerous devotees coming to worship the Khandoba Temple there.
+            Recently the increase in property rates and the planning of an
+            international airport near the town has seen a spurt of development
+            happening there.
+          </p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img
+            class="bd-placeholder-img"
+            width="200"
+            height="250"
+            src="{% static 'img/Purnadhar.jpg' %}"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div
+        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+      >
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Fort,temple</strong>
+          <h3 class="mb-0">Jejuri</h3>
+          <p class="mb-auto">
+            It is famous for the main temple of Lord Khandoba. It is a famous
+            temple town being the family deity of many houses in Maharashtra and
+            Karnataka. Its economy is centered on businesses catering to the
+            numerous devotees coming to worship the Khandoba Temple there.
+            Recently the increase in property rates and the planning of an
+            international airport near the town has seen a spurt of development
+            happening there.
+          </p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img
+            src="{% static 'img/jejuri.jpg' %}"
+            alt=""
+            class="bd-placeholder-img"
+            width="200"
+            height="250"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div
+        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+      >
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Temple</strong>
+          <h3 class="mb-0">Sangameshwar temple</h3>
+          <p class="mb-auto">
+            Believed to have been built sometime between the 10th and 13th
+            century, Sangameshwar temple stands guard over the confluence of the
+            Chamli and Karha rivers, just south of Saswad. Dedicated to Lord
+            Shiva, the temple is about 35km south-east of Pune, and takes just
+            over an hour to reach there from Pune.
+          </p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img
+            src="{% static 'img/sangmesvar.jpg' %}"
+            alt=""
+            class="bd-placeholder-img"
+            width="200"
+            height="250"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div
+        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+      >
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Temple</strong>
+          <h3 class="mb-0">Kodit</h3>
+          <p class="mb-auto">
+            Shrinath Mhaskoba Temple, Kodit, Sasvad, Maharashtra, India. Veer
+            Mhaskoba is Kaal bhairava an Avatar of the Hindu deity Shiva. The
+            clan deity of many Hindus, the worship of Kaala Bhairava as Veer
+            Mhaskoba was popularized by the Dhangar caste. He is also worshipped
+            by tribal and pastoral people.
+          </p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img
+            src="{% static 'img/codit.jpg' %}"
+            alt=""
+            class="bd-placeholder-img"
+            width="200"
+            height="250"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end of the card -->
+
+{% endblock body %}

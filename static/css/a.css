@@ -1,0 +1,52 @@
+#cl{
+    display: flex;
+}
+.cl{
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 28px;
+}
+
+.fot{
+    text-align: center;
+    padding: 20px;
+    color: white;
+    
+    
+    
+}
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .dec{
+      text-decoration: none;
+      color: black;
+  }
+
+  .bc{
+      border: none;
+  }
+
+  .bc:focus{
+      border: none;
+      outline: none;
+  }
+
+  .colour{
+      color: rgb(19, 1, 2);
+      background-color: blanchedalmond;
+      box-sizing: border-box;
+  }

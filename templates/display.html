@@ -1,0 +1,48 @@
+{% extends 'fstruct.html' %} {% load static %} {% block body %}
+
+<!-- Main Site -->
+<main id="site-main">
+  <div class="container">
+    <div class="box-nav d-flex justify-between">
+      <a href="/add-user/" class="border-shadow">
+        <span class="text-gradient">New User <i class="fas fa-user"></i></span>
+      </a>
+    </div>
+
+    <!-- form handling -->
+    <form action="/" method="POST">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <!-- <th>ID</th> -->
+            <th>Name</th>
+            <th>@Email</th>
+            <th>Opinion</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for i in display %}
+          <tr>
+            <!-- <td>{{i.user_id}}</td> -->
+            <td>{{i.user_name}}</td>
+            <td>{{i.user_email}}</td>
+            <td>{{i.user_opinion}}</td>
+            <td>
+              <a href="{% url 'edit' i.pk %}" class="btn border-shadow update">
+                <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+              </a>
+              <a href="{% url 'delete' i.pk %}" class="btn border-shadow delete" data-id="#">
+                <span class="text-gradient"><i class="fas fa-times"></i></span>
+              </a>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </form>
+  </div>
+</main>
+<!-- /Main Site -->
+
+{% endblock body %}
